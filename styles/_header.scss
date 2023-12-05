@@ -1,0 +1,31 @@
+.main-header {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    @include flex(row, space-between, center);
+
+    .logo, ul {
+        flex: 1 1 40rem; 
+    }
+
+    .logo a {
+        @include flex(row, start, center);
+        h1 {
+            display: inline-block;
+        }
+        img {
+            width: 4.5rem;
+            height: 4.5rem;
+            margin-right: 1.5rem; 
+        }
+    }
+
+    ul {
+        @include flex(row, space-around, center);
+    }
+    
+    
+}

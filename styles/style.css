@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3.3rem;
+}
+
+h4, h5 {
+  font-size: 2.8rem;
+}
+
+li, a {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-header {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo, nav ul {
+  flex: 1 1 40rem;
+}
+nav .logo a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+nav .logo a h1 {
+  display: inline-block;
+}
+nav .logo a img {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 1.5rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
