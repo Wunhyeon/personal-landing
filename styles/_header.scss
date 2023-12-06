@@ -26,6 +26,16 @@ nav {
     ul {
         @include flex(row, space-around, center);
     }
-    
-    
+       
+}
+
+.burger {
+    display: none;
+    span {
+        width: 50px;
+        height: 5px;
+        background-color: black;
+        display: block;
+        margin: 8px auto;
+    }
 }

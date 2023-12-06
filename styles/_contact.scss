@@ -30,8 +30,10 @@
             cursor: pointer;
         }
 
-        input:focus{
-            border: 2px solid black;
+        input, textarea {
+            &:focus {
+                outline: 2px solid black;
+            }
         }
  
     }

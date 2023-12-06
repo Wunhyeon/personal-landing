@@ -3,12 +3,14 @@ footer {
     background: lightgray;
     padding: 0 5%;
     @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    text-align: center;
     h4 {
         flex : 1 1 30rem;
     }
     ul {
         flex : 1 1 30rem;
-        @include flex(row, end, center);
+        @include flex(row, center, center);
         li {
             margin: 0 3%;
         }
