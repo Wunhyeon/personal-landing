@@ -47,6 +47,7 @@ a {
 
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -55,6 +56,7 @@ nav .logo, nav ul {
 }
 nav .logo a {
   display: flex;
+  flex-direction: row;
   justify-content: start;
   align-items: center;
 }
@@ -68,6 +70,7 @@ nav .logo a img {
 }
 nav ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -75,6 +78,7 @@ nav ul {
 #hero {
   min-height: 90vh;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -107,4 +111,137 @@ nav ul {
   right: 0;
   z-index: -1;
   height: 100%;
+}
+
+#letter {
+  animation: letter 3s infinite alternate ease;
+}
+
+#smartphone {
+  animation: smartphone 3s infinite linear;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#grid {
+  animation: grid 2s infinite alternate;
+}
+
+#check-circle {
+  animation: check-circle 1.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#check-circle-container {
+  animation: check-circle-container 3s infinite linear alternate;
+}
+
+@keyframes letter {
+  from {
+    transform: translateY(30%);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+@keyframes smartphone {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes grid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes check-circle {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes check-circle-container {
+  from {
+    transform: translateY(-30%);
+  }
+  to {
+    transform: translateY(30%);
+  }
+}
+#project {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 10%;
+  min-height: 60vh;
+}
+
+.photo-container {
+  position: relative;
+  background: black;
+  overflow: hidden;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.photo-container:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.photo-container:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.photo-description {
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+.photo-description button {
+  padding: 0.5rem 1rem;
+  background: rgb(107, 107, 218);
+  color: white;
+  border: none;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.photo-container:hover .photo {
+  opacity: 0.4;
+}
+
+.photo-container:hover .photo-description {
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=style.css.map */

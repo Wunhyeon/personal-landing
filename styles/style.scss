@@ -6,6 +6,7 @@ $text : 2rem;
 
 @mixin flex ($direction, $justify, $align) {
     display: flex;
+    flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
 }
@@ -13,3 +14,4 @@ $text : 2rem;
 @import './global';
 @import './header';
 @import './hero';
+@import './project';

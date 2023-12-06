@@ -32,3 +32,70 @@
     z-index: -1;
     height: 100%;
 }
+
+#letter {
+    animation: letter 3s infinite alternate ease;
+}
+
+#smartphone{
+    animation: smartphone 3s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#grid {
+    animation: grid 2s infinite alternate;
+}
+
+#check-circle {
+    animation: check-circle 1.5s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#check-circle-container {
+    animation: check-circle-container 3s infinite linear alternate;
+}
+
+
+@keyframes letter {
+    from {
+        transform: translateY(30%);
+    }
+    to {
+        transform: translateY(-30%);
+    }
+}
+
+@keyframes smartphone{
+    from {
+        transform: rotateZ(0deg);
+    }to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes grid {
+    from {
+        opacity: 0;
+    }to {
+        opacity: 1;
+    }
+}
+
+@keyframes check-circle{
+    from {
+        transform:  rotateZ(0deg);
+    }to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes check-circle-container {
+    from {
+        transform: translateY(-30%);
+    }to {
+        transform: translateY(30%);
+    }
+}
+
