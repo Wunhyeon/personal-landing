@@ -1,0 +1,42 @@
+#contact {
+    min-height: 60vh;
+    margin: 5% 25%;
+    padding : 5% 5% 2% 5%;
+    border: 1px solid gray;
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        @include flex(column, start, start);
+        label {
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+            padding: 1rem;
+            background: #1A80AC;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        input:focus{
+            border: 2px solid black;
+        }
+ 
+    }
+
+    form * {
+        margin: 1.5% 0;
+    }
+}

@@ -27,7 +27,9 @@ h4, h5 {
 
 li,
 a,
-p {
+p,
+label,
+input {
   font-size: 2rem;
 }
 
@@ -258,4 +260,66 @@ nav ul {
 }
 .center-box h3 {
   color: white;
+}
+
+#contact {
+  min-height: 60vh;
+  margin: 5% 25%;
+  padding: 5% 5% 2% 5%;
+  border: 1px solid gray;
+}
+#contact h2 {
+  text-align: center;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+#contact form label {
+  font-weight: bold;
+}
+#contact form input {
+  width: 100%;
+}
+#contact form textarea {
+  width: 100%;
+}
+#contact form button {
+  width: 100%;
+  padding: 1rem;
+  background: #1A80AC;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+#contact form input:focus {
+  border: 2px solid black;
+}
+#contact form * {
+  margin: 1.5% 0;
+}
+
+footer {
+  min-height: 10vh;
+  background: lightgray;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h4 {
+  flex: 1 1 30rem;
+}
+footer ul {
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+footer ul li {
+  margin: 0 3%;
 }/*# sourceMappingURL=style.css.map */
